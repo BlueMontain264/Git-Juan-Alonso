@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   /* imprime mensaje en pantalla según hora */
+
+    <script>
+    //let hora=2;
+
+    let hora = parseInt(prompt("Introduce hora [0-24]:"));  // parse para poner un entero
+
+    if (hora<12) {
+            console.log("Buenos Días")
+    }else if(hora>=12 && hora<20) {
+            console.log("Buenas Tardes");
+    }else if(hora>=20 && hora<=23) {
+            console.log("Buenas Noches");
+    }else if(hora>=24 && hora<0) {
+            console.log("Hora incorrecta");
+    }
+
+    </script>
+
+
+</body>
+</html>
